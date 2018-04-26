@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url();
+    background-image: url(baggrund_01.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
