@@ -61,3 +61,29 @@ body {
         background-position: -400% 0;
     }
 }
+
+/*Kat KARAKTER*/
+
+#kat_sprite {
+    background-image: url(kat_walkcycle_done-01.svg);
+    background-size: 300% 100%;
+    width: 14vw;
+    height: 20vw;
+}
+
+.kat_walkcycle {
+    animation-name: kat_walkcycle_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes kat_walkcycle_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -300% 0;
+    }
+}
