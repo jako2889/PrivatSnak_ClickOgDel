@@ -34,3 +34,30 @@ body {
     background-repeat: no-repeat;
     z-index: 2;
 }
+
+/*NØRD KARAKTER*/
+
+#noerd_sprite {
+    background-image: url(noerd_walkcycle-01.svg);
+    background-size: 400% 100%;
+    width: 14vw;
+    height: 20vw;
+
+}
+
+.noerd_walkcycle {
+    animation-name: noerd_walkcycle_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes noerd_walkcycle_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -400% 0;
+    }
+}
