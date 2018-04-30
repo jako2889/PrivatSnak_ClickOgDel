@@ -91,7 +91,7 @@ body {
 /* DØR ANIMATION */
 
 #doer_sprite {
-     background-image: url(doer_walkcycle-01.svg);
+     background-image: url(doer_walkcycle_ny-01.svg);
     background-size: 200% 100%;
     width: 14vw;
     height: 20vw;
