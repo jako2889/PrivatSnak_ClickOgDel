@@ -245,3 +245,36 @@ body {
 .phone_noerd {
     background-position: -400% 0;
 }
+
+/* VALG */
+
+#valg_question {
+    background-image: url(valg_01_projekt.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    pointer-events: none;
+    display: none;
+}
+#valg_ja {
+     background-image: url(valg_01_ja.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 7vw;
+    height: 19vw;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+#valg_nej {
+     background-image: url(valg_01_nej.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 7vw;
+    height: 19vw;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
