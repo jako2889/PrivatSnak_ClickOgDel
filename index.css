@@ -182,3 +182,32 @@ body {
         background-position: -400% 0;
     }
 }
+
+/* PHONE POV KARAKTER */
+
+#phone_sprite {
+     background-image: url(phone_walk_rettet-01.svg);
+    background-size: 500% 100%;
+    width: 14vw;
+    height: 20vw;
+}
+
+.phone_tom {
+    background-position: 0 0;
+}
+
+.phone_celeb {
+    background-position: -100% 0;
+}
+
+.phone_kvinde {
+    background-position: -200% 0;
+}
+
+.phone_kat {
+    background-position: -300% 0;
+}
+
+.phone_noerd {
+    background-position: -400% 0;
+}
