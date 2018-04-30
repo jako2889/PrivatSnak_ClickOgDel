@@ -278,3 +278,14 @@ body {
     cursor: pointer;
     display: none;
 }
+
+#info_box {
+    background-image: url(pjece_logoer_projekt-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    pointer-events: none;
+    display: none;
+}
