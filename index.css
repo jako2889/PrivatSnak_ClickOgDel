@@ -37,6 +37,11 @@ body {
 
 /*NØRD KARAKTER*/
 
+#noerd_container {
+    position: absolute;
+    z-index: 2;
+}
+
 #noerd_sprite {
     background-image: url(noerd_walkcycle_ny-01.svg);
     background-size: 400% 100%;
@@ -64,6 +69,11 @@ body {
 
 /*Kat KARAKTER*/
 
+#kat_container {
+    position: absolute;
+    z-index: 2;
+}
+
 #kat_sprite {
     background-image: url(kat_walkcycle_done-01.svg);
     background-size: 300% 100%;
@@ -89,6 +99,10 @@ body {
 }
 
 /* DØR ANIMATION */
+#doer_container {
+    position: absolute;
+    z-index: 2;
+}
 
 #doer_sprite {
      background-image: url(doer_walkcycle_ny-01.svg);
@@ -106,6 +120,11 @@ body {
 }
 
 /* 6ix9ine KARAKTER */
+
+#celeb_container {
+    position: absolute;
+    z-index: 2;
+}
 
 #celeb_sprite {
     background-image: url(walk_6ix9ine-01.svg);
@@ -133,6 +152,11 @@ body {
 
 /* DRENG KARAKTER */
 
+#dreng_container {
+    position: absolute;
+    z-index: 2;
+}
+
 #dreng_sprite {
     background-image: url(walk_hovedpersonen-01.svg);
     background-size: 400% 100%;
@@ -159,6 +183,11 @@ body {
 
 /* KVINDE KARAKTER */
 
+#kvinde_container {
+    position: absolute;
+    z-index: 2;
+}
+
 #kvinde_sprite {
      background-image: url(kvinde_walkcycle-01.svg);
     background-size: 400% 100%;
@@ -184,6 +213,11 @@ body {
 }
 
 /* PHONE POV KARAKTER */
+
+#phone_container {
+    position: absolute;
+    z-index: 2;
+}
 
 #phone_sprite {
      background-image: url(phone_walk_rettet-01.svg);
