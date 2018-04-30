@@ -87,3 +87,20 @@ body {
         background-position: -300% 0;
     }
 }
+
+/* DØR ANIMATION */
+
+#doer_sprite {
+     background-image: url(doer_walkcycle-01.svg);
+    background-size: 200% 100%;
+    width: 14vw;
+    height: 20vw;
+}
+
+.doer_open {
+    background-position: 0 0;
+}
+
+.doer_closed  {
+    background-position: -100% 0;
+}
