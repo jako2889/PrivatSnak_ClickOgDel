@@ -156,3 +156,29 @@ body {
         background-position: -400% 0;
     }
 }
+
+/* KVINDE KARAKTER */
+
+#kvinde_sprite {
+     background-image: url(kvinde_walkcycle-01.svg);
+    background-size: 400% 100%;
+    width: 14vw;
+    height: 20vw;
+}
+
+.kvinde_walkcycle {
+    animation-name: kvinde_walkcycle_kf;
+    animation-duration: 1s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+@keyframes kvinde_walkcycle_kf {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -400% 0;
+    }
+}
