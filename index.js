@@ -27,6 +27,7 @@ function doer_close() {
     $("#dreng_sprite").addClass("dreng_walkcycle");
 
     $("#fodtrin_lyd")[0].play();
+    $("#uhh_hallo_dreng")[0].play();
 
     $("#dreng_container").on("animationend", scene_skift);
 }
@@ -112,6 +113,7 @@ function noerd_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
+    $("#grynt")[0].play();
 
     $("#valg_ja").on("click", skrr_intro);
     $("#valg_nej").on("click", skrr_intro);
@@ -143,6 +145,7 @@ function skrr_intro2() {
     $("#celeb_container").removeClass("celeb_positionstart");
 
     $("#fodtrin_lyd")[0].play();
+
 
      $("#celeb_container").addClass("celeb_movein");
     $("#celeb_sprite").addClass("celeb_walkcycle");
@@ -185,6 +188,7 @@ function celeb_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
+    $("#skrr")[0].play();
 
     $("#valg_ja").on("click", kat_intro);
     $("#valg_nej").on("click", kat_intro);
@@ -256,6 +260,8 @@ function kat_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
+    $("#miav")[0].volume = 0.5;
+    $("#miav")[0].play();
 
     $("#valg_ja").on("click", kvinde_intro);
     $("#valg_nej").on("click", kvinde_intro);
@@ -327,6 +333,9 @@ function kvinde_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
+
+    $("#miav")[0].volume = 0.4;
+    $("#pift_kvinde")[0].play();
 
     $("#valg_ja").on("click", credit_antal_rigtige);
     $("#valg_nej").on("click", credit_antal_rigtige);
