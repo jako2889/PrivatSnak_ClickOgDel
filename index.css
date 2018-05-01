@@ -269,7 +269,7 @@ body {
 
 .dreng_movein {
      animation-name: dreng_movein_kf;
-    animation-duration: 1s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
@@ -277,11 +277,11 @@ body {
 
 @keyframes dreng_movein_kf {
     0% {
-        transform: translate(100vw, 20vw);
+        transform: translate(100vw, 22vw);
     }
 
     100% {
-        transform: translate(-20vw, 40vw);
+        transform: translate(-20vw, 47vw);
     }
 
 }
