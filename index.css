@@ -458,5 +458,5 @@ body {
     position: absolute;
     pointer-events: none;
     display: none;
-    z-index: 2;
+    z-index: 3;
 }
