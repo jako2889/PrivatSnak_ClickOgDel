@@ -97,4 +97,17 @@ function scene_blitz() {
     $("#blitz_lyd")[0].play();
     $("#phone_sprite").addClass("phone_noerd");
     $("#phone_container").addClass("phone_positionblitz");
+
+    $("#scene").on("animationend", noerd_valg);
+}
+
+function noerd_valg() {
+    console.log("Nørd valg");
+    $("#scene").off("animationend", noerd_valg);
+    $("#scene").removeClass("scene_flash");
+
+    $("#valg_question").show();
+    $("#valg_ja").show();
+    $("#valg_nej").show();
+
 }

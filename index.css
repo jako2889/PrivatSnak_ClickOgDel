@@ -415,29 +415,38 @@ body {
     background-size: 100%;
     width: 40vw;
     height: 40vw;
+    left: 13vw;
+    top: 1vw;
     position: absolute;
     pointer-events: none;
     display: none;
+    z-index: 2;
 }
 #valg_ja {
      background-image: url(valg_01_ja.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 7vw;
-    height: 19vw;
+    height: 5vw;
+    left: 20vw;
+    top: 15vw;
     position: absolute;
     cursor: pointer;
     display: none;
+    z-index: 3;
 }
 #valg_nej {
      background-image: url(valg_01_nej.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 7vw;
-    height: 19vw;
+    height: 5vw;
+    left: 35vw;
+    top: 15vw;
     position: absolute;
     cursor: pointer;
     display: none;
+    z-index: 3;
 }
 
 #info_box {
@@ -449,4 +458,5 @@ body {
     position: absolute;
     pointer-events: none;
     display: none;
+    z-index: 2;
 }
