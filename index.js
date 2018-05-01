@@ -23,6 +23,8 @@ function doer_close() {
     $("#dreng_container").addClass("dreng_movein");
     $("#dreng_sprite").addClass("dreng_walkcycle");
 
+    $("#fodtrin_lyd")[0].play();
+
     $("#dreng_container").on("animationend", scene_skift);
 }
 
@@ -49,6 +51,7 @@ function doer_open() {
     console.log("dør åbnes til næste scene");
     $("#doer_sprite").removeClass("doer_closed");
 
+    $("#doer_lyd")[0].currentTime = 0;
     $("#doer_lyd")[0].play();
 
     $("#doer_sprite").addClass("doer_open");
@@ -79,4 +82,7 @@ function noerd_position_in() {
 
     $("#noerd_container").addClass("noerd_positionin");
     $("#doer_sprite").addClass("doer_closed");
+
+    $("#doer_lyd")[0].currentTime = 0;
+    $("#doer_lyd")[0].play();
 }
