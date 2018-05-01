@@ -35,7 +35,19 @@ function scene_skift() {
     $("#dreng_sprite").removeClass("dreng_walkcycle");
     $("#doer_sprite").removeClass("doer_open");
 
+    $("#doer_lyd")[0].play();
+
     $("#phone_container").show();
     $("#doer_sprite").addClass("doer_closed");
     $("#dreng_container").addClass("dreng_positionin");
+
+}
+
+function doer_open() {
+    console.log("dør åbnes til næste scene");
+    $("#doer_sprite").removeClass("doer_closed");
+
+    $("#doer_lyd")[0].play();
+
+    $("#doer_sprite").addClass("doer_open");
 }
