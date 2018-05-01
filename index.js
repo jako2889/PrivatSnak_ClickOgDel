@@ -85,4 +85,14 @@ function noerd_position_in() {
 
     $("#doer_lyd")[0].currentTime = 0;
     $("#doer_lyd")[0].play();
+
+    setTimeout(scene_blitz, 2000);
+}
+
+function scene_blitz() {
+    console.log("kamera blitzer");
+
+    $("#scene").addClass("scene_flash");
+    $("#blitz_lyd")[0].play();
+    $("#phone_sprite").addClass("phone_noerd");
 }
