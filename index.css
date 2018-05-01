@@ -130,7 +130,7 @@ body {
 
 .kat_movein {
      animation-name: kat_movein_kf;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
@@ -211,7 +211,7 @@ body {
 
 .celeb_movein {
      animation-name: celeb_movein_kf;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
@@ -327,7 +327,7 @@ body {
 
 .kvinde_movein {
      animation-name: kvinde_movein_kf;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
