@@ -227,6 +227,9 @@ function kat_intro2() {
      $("#kat_container").addClass("kat_movein");
     $("#kat_sprite").addClass("kat_walkcycle");
 
+    $("#miav")[0].volume = 0.3;
+    $("#miav")[0].play();
+
     $("#kat_container").on("animationend", kat_position_in);
 }
 
@@ -265,8 +268,6 @@ function kat_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
-    $("#miav")[0].volume = 0.5;
-    $("#miav")[0].play();
 
     $("#valg_ja").on("click", kvinde_intro);
     $("#valg_nej").on("click", kvinde_intro);
