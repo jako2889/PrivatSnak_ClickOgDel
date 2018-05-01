@@ -21,6 +21,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 1;
+    overflow: hidden;
 }
 
 #forgrund {
@@ -313,8 +314,12 @@ body {
 #phone_sprite {
      background-image: url(phone_walk_rettet-01.svg);
     background-size: 500% 100%;
-    width: 14vw;
-    height: 20vw;
+    width: 19vw;
+    height: 25vw;
+}
+
+.phone_positionin {
+    transform: translate(-5vw, 31.4vw);
 }
 
 .phone_tom {
