@@ -113,4 +113,22 @@ function noerd_valg() {
     $("#valg_ja").show();
     $("#valg_nej").show();
 
+    $("#valg_ja").on("click", skrr_intro);
+    $("#valg_nej").on("click", skrr_intro);
+}
+
+function skrr_intro() {
+    console.log("Skifter til celeb intro");
+    $("#valg_question").hide();
+    $("#valg_ja").hide();
+    $("#valg_nej").hide();
+    $("#noerd_container").removeClass("noerd_positionin");
+    $("#doer_sprite").removeClass("doer_closed");
+    $("#phone_sprite").removeClass("phone_noerd");
+    $("#phone_container").removeClass("phone_positionblitz");
+
+    $("#doer_sprite").addClass("doer_open");
+    $("#phone_sprite").addClass("phone_tom");
+    $("#noerd_container").addClass("noerd_positionstart");
+    $("#phone_container").addClass("phone_positionin");
 }

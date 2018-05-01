@@ -15,7 +15,7 @@ body {
 .scene_flash {
     animation-name: scene_flash_kf;
     animation-iteration-count: 1;
-    animation-duration: 1s;
+    animation-duration: 2s;
 }
 @keyframes scene_flash_kf {
     0% {
