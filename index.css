@@ -65,6 +65,11 @@ body {
     height: 20vw;
 
 }
+
+.noerd_positionstart {
+    transform: translate(100vw, 20vw);
+}
+
 .noerd_movein {
      animation-name: noerd_movein_kf;
     animation-duration: 1s;
@@ -117,6 +122,10 @@ body {
     background-size: 300% 100%;
     width: 14vw;
     height: 20vw;
+}
+
+.kat_positionstart {
+    transform: translate(100vw, 20vw);
 }
 
 .kat_movein {
@@ -196,6 +205,10 @@ body {
     height: 20vw;
 }
 
+.celeb_positionstart {
+    transform: translate(100vw, 20vw);
+}
+
 .celeb_movein {
      animation-name: celeb_movein_kf;
     animation-duration: 1s;
@@ -250,6 +263,10 @@ body {
     height: 20vw;
 }
 
+.dreng_positionstart {
+    transform: translate(100vw, 20vw);
+}
+
 .dreng_movein {
      animation-name: dreng_movein_kf;
     animation-duration: 1s;
@@ -302,6 +319,10 @@ body {
     background-size: 400% 100%;
     width: 14vw;
     height: 20vw;
+}
+
+.kvinde_positionstart {
+    transform: translate(100vw, 20vw);
 }
 
 .kvinde_movein {
