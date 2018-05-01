@@ -138,17 +138,17 @@ body {
 
 @keyframes kat_movein_kf {
     0% {
-        transform: translate(100vw, 20vw);
+        transform: translate(100vw, 25vw);
     }
 
     100% {
-        transform: translate(50vw, 30vw);
+        transform: translate(50vw, 35vw);
     }
 
 }
 
 .kat_positionin {
-    transform: translate(50vw, 30vw);
+    transform: translate(50vw, 35vw);
 }
 
 .kat_walkcycle {

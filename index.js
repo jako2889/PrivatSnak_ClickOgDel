@@ -238,4 +238,25 @@ function kat_position_in() {
 
 function scene_blitz3() {
     console.log("kameraet blitzer");
+    $("#phone_container").removeClass("phone_positionin");
+
+    $("#scene").addClass("scene_flash");
+    $("#blitz_lyd")[0].play();
+    $("#phone_sprite").addClass("phone_kat");
+    $("#phone_container").addClass("phone_positionblitz");
+
+    $("#scene").on("animationend", kat_valg);
+}
+
+function kat_valg() {
+    console.log("kat valg");
+    $("#scene").off("animationend", kat_valg);
+    $("#scene").removeClass("scene_flash");
+
+    $("#valg_question").show();
+    $("#valg_ja").show();
+    $("#valg_nej").show();
+
+    $("#valg_ja").on("click", kvinde_intro);
+    $("#valg_nej").on("click", kvinde_intro);
 }
