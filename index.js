@@ -119,6 +119,9 @@ function noerd_valg() {
 
 function skrr_intro() {
     console.log("Skifter til celeb intro");
+    $("#valg_ja").off("click", skrr_intro);
+    $("#valg_nej").off("click", skrr_intro);
+
     $("#valg_question").hide();
     $("#valg_ja").hide();
     $("#valg_nej").hide();
@@ -189,4 +192,50 @@ function celeb_valg() {
 
 function kat_intro() {
     console.log("kat intro");
+     $("#valg_ja").off("click", kat_intro);
+    $("#valg_nej").off("click", kat_intro);
+    $("#valg_question").hide();
+    $("#valg_ja").hide();
+    $("#valg_nej").hide();
+    $("#celeb_container").removeClass("celeb_positionin");
+    $("#doer_sprite").removeClass("doer_closed");
+    $("#phone_sprite").removeClass("phone_celeb");
+    $("#phone_container").removeClass("phone_positionblitz");
+
+    $("#doer_sprite").addClass("doer_open");
+    $("#phone_sprite").addClass("phone_tom");
+    $("#celeb_container").addClass("celeb_positionstart");
+    $("#phone_container").addClass("phone_positionin");
+
+    setTimeout(kat_intro2, 2000);
+}
+
+function kat_intro2() {
+    console.log("kat kommer ind");
+    $("#kat_container").removeClass("kat_positionstart");
+
+
+     $("#kat_container").addClass("kat_movein");
+    $("#kat_sprite").addClass("kat_walkcycle");
+
+    $("#kat_container").on("animationend", kat_position_in);
+}
+
+function kat_position_in() {
+    console.log("kat står på scenen");
+    $("#kat_container").off("animationend", kat_position_in);
+    $("#kat_container").removeClass("kat_movein");
+    $("#kat_sprite").removeClass("kat_walkcycle");
+
+     $("#kat_container").addClass("kat_positionin");
+    $("#doer_sprite").addClass("doer_closed");
+
+    $("#doer_lyd")[0].currentTime = 0;
+    $("#doer_lyd")[0].play();
+
+    setTimeout(scene_blitz3, 2000);
+}
+
+function scene_blitz3() {
+    console.log("kameraet blitzer");
 }

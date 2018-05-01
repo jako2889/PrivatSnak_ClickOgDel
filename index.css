@@ -281,7 +281,7 @@ body {
     }
 
     100% {
-        transform: translate(-20vw, 47vw);
+        transform: translate(-20vw, 47vw) scale(1.5);
     }
 
 }
