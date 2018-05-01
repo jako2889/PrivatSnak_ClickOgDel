@@ -41,7 +41,7 @@ body {
 
 #forgrund {
      position: absolute;
-    top: 15vw;
+    top: 16vw;
     left: 20vw;
     width: 120vw;
     height: 40vw;
@@ -376,11 +376,11 @@ body {
      background-image: url(phone_walk_rettet-01.svg);
     background-size: 500% 100%;
     width: 19vw;
-    height: 25vw;
+    height: 27.2vw;
 }
 
 .phone_positionin {
-    transform: translate(-5vw, 31.4vw);
+    transform: translate(0vw, 31.4vw);
 }
 
 .phone_positionblitz {
@@ -410,7 +410,7 @@ body {
 /* VALG */
 
 #valg_question {
-    background-image: url(valg_01_projekt.svg);
+    background-image: url(valg_01_ny.svg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 40vw;
@@ -426,10 +426,10 @@ body {
      background-image: url(valg_01_ja.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 7vw;
-    height: 5vw;
-    left: 20vw;
-    top: 15vw;
+    width: 9vw;
+    height: 6.3vw;
+    left: 20.5vw;
+    top: 13.5vw;
     position: absolute;
     cursor: pointer;
     display: none;
@@ -439,10 +439,10 @@ body {
      background-image: url(valg_01_nej.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 7vw;
-    height: 5vw;
-    left: 35vw;
-    top: 15vw;
+    width: 9vw;
+    height: 6.3vw;
+    left: 34.5vw;
+    top: 13.5vw;
     position: absolute;
     cursor: pointer;
     display: none;
