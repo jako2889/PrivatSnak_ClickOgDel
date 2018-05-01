@@ -52,20 +52,24 @@ body {
 .noerd_movein {
      animation-name: noerd_movein_kf;
     animation-duration: 1s;
-    animation-iteration-count: 1;
+    animation-iteration-count: infinite;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
 
 @keyframes noerd_movein_kf {
     0% {
-        transform: translate(0vw, 0vw);
+        transform: translate(100vw, 20vw);
     }
 
     100% {
-        transform: translate(0vw, 0vw);
+        transform: translate(50vw, 30vw);
     }
 
+}
+
+.noerd_positionin {
+    transform: translate(50vw, 30vw);
 }
 
 .noerd_walkcycle {
@@ -97,6 +101,29 @@ body {
     background-size: 300% 100%;
     width: 14vw;
     height: 20vw;
+}
+
+.kat_movein {
+     animation-name: kat_movein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes kat_movein_kf {
+    0% {
+        transform: translate(100vw, 20vw);
+    }
+
+    100% {
+        transform: translate(50vw, 30vw);
+    }
+
+}
+
+.kat_positionin {
+    transform: translate(50vw, 30vw);
 }
 
 .kat_walkcycle {
@@ -182,6 +209,29 @@ body {
     height: 20vw;
 }
 
+.dreng_movein {
+     animation-name: dreng_movein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes dreng_movein_kf {
+    0% {
+        transform: translate(100vw, 20vw);
+    }
+
+    100% {
+        transform: translate(50vw, 30vw);
+    }
+
+}
+
+.dreng_positionin {
+    transform: translate(50vw, 30vw);
+}
+
 .dreng_walkcycle {
     animation-name: dreng_walkcycle_kf;
     animation-duration: 1s;
@@ -211,6 +261,29 @@ body {
     background-size: 400% 100%;
     width: 14vw;
     height: 20vw;
+}
+
+.kvinde_movein {
+     animation-name: kvinde_movein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes kvinde_movein_kf {
+    0% {
+        transform: translate(100vw, 20vw);
+    }
+
+    100% {
+        transform: translate(50vw, 30vw);
+    }
+
+}
+
+.kvinde_positionin {
+    transform: translate(50vw, 30vw);
 }
 
 .kvinde_walkcycle {
