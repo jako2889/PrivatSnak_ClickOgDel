@@ -260,3 +260,78 @@ function kat_valg() {
     $("#valg_ja").on("click", kvinde_intro);
     $("#valg_nej").on("click", kvinde_intro);
 }
+
+function kvinde_intro() {
+    console.log("kvinde intro");
+    $("#valg_ja").off("click", kvinde_intro);
+    $("#valg_nej").off("click", kvinde_intro);
+    $("#valg_question").hide();
+    $("#valg_ja").hide();
+    $("#valg_nej").hide();
+    $("#kat_container").removeClass("kat_positionin");
+    $("#doer_sprite").removeClass("doer_closed");
+    $("#phone_sprite").removeClass("phone_kat");
+    $("#phone_container").removeClass("phone_positionblitz");
+
+    $("#doer_sprite").addClass("doer_open");
+    $("#phone_sprite").addClass("phone_tom");
+    $("#kat_container").addClass("kat_positionstart");
+    $("#phone_container").addClass("phone_positionin");
+
+    setTimeout(kvinde_intro2, 2000);
+}
+
+function kvinde_intro2() {
+    console.log("kvinde kommer ind");
+    $("#kvinde_container").removeClass("kvinde_positionstart");
+
+
+     $("#kvinde_container").addClass("kvinde_movein");
+    $("#kvinde_sprite").addClass("kvinde_walkcycle");
+
+    $("#kvinde_container").on("animationend", kvinde_position_in);
+}
+
+function kvinde_position_in() {
+    console.log("kvinde står på scenen");
+    $("#kvinde_container").off("animationend", kvinde_position_in);
+    $("#kvinde_container").removeClass("kvinde_movein");
+    $("#kvinde_sprite").removeClass("kvinde_walkcycle");
+
+     $("#kvinde_container").addClass("kvinde_positionin");
+    $("#doer_sprite").addClass("doer_closed");
+
+    $("#doer_lyd")[0].currentTime = 0;
+    $("#doer_lyd")[0].play();
+
+    setTimeout(scene_blitz4, 2000);
+}
+
+function scene_blitz4() {
+    console.log("kameraet blitzer");
+    $("#phone_container").removeClass("phone_positionin");
+
+    $("#scene").addClass("scene_flash");
+    $("#blitz_lyd")[0].play();
+    $("#phone_sprite").addClass("phone_kvinde");
+    $("#phone_container").addClass("phone_positionblitz");
+
+    $("#scene").on("animationend", kvinde_valg);
+}
+
+function kvinde_valg() {
+    console.log("kvinde valg");
+    $("#scene").off("animationend", kvinde_valg);
+    $("#scene").removeClass("scene_flash");
+
+    $("#valg_question").show();
+    $("#valg_ja").show();
+    $("#valg_nej").show();
+
+    $("#valg_ja").on("click", credit_antal_rigtige);
+    $("#valg_nej").on("click", credit_antal_rigtige);
+}
+
+function credit_antal_rigtige() {
+    console.log("antal rigtige");
+}
