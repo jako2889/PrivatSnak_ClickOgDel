@@ -163,6 +163,8 @@ body {
 #doer_container {
     position: absolute;
     z-index: 2;
+    right: -1.5vw;
+    top: 20vw;
 }
 
 #doer_sprite {
@@ -251,7 +253,7 @@ body {
 .dreng_movein {
      animation-name: dreng_movein_kf;
     animation-duration: 1s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-fill-mode: forwards;
     animation-timing-function: linear;
 }
@@ -262,13 +264,13 @@ body {
     }
 
     100% {
-        transform: translate(50vw, 30vw);
+        transform: translate(-20vw, 40vw);
     }
 
 }
 
 .dreng_positionin {
-    transform: translate(50vw, 30vw);
+    transform: translate(-20vw, 40vw);
 }
 
 .dreng_walkcycle {
