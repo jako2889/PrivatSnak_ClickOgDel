@@ -8,4 +8,5 @@ function sidenvises() {
     $("#kat_container").addClass("kat_positionstart");
     $("#celeb_container").addClass("celeb_positionstart");
     $("#kvinde_container").addClass("kvinde_positionstart");
+    $("#phone_container").addClass("phone_positionin");
 }
