@@ -383,6 +383,10 @@ body {
     transform: translate(-5vw, 31.4vw);
 }
 
+.phone_positionblitz {
+    transform: translate(0vw, 31.4vw);
+}
+
 .phone_tom {
     background-position: 0 0;
 }

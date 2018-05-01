@@ -91,8 +91,10 @@ function noerd_position_in() {
 
 function scene_blitz() {
     console.log("kamera blitzer");
+    $("#phone_container").removeClass("phone_positionin");
 
     $("#scene").addClass("scene_flash");
     $("#blitz_lyd")[0].play();
     $("#phone_sprite").addClass("phone_noerd");
+    $("#phone_container").addClass("phone_positionblitz");
 }
