@@ -41,6 +41,8 @@ function scene_skift() {
     $("#doer_sprite").addClass("doer_closed");
     $("#dreng_container").addClass("dreng_positionin");
 
+    setTimeout(doer_open, 2000);
+
 }
 
 function doer_open() {
