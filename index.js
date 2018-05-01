@@ -124,6 +124,8 @@ function skrr_intro() {
     $("#valg_ja").off("click", skrr_intro);
     $("#valg_nej").off("click", skrr_intro);
 
+    $("#knap_lyd")[0].play();
+
     $("#valg_question").hide();
     $("#valg_ja").hide();
     $("#valg_nej").hide();
@@ -201,6 +203,9 @@ function kat_intro() {
     $("#valg_question").hide();
     $("#valg_ja").hide();
     $("#valg_nej").hide();
+
+    $("#knap_lyd")[0].play();
+
     $("#celeb_container").removeClass("celeb_positionin");
     $("#doer_sprite").removeClass("doer_closed");
     $("#phone_sprite").removeClass("phone_celeb");
@@ -274,6 +279,9 @@ function kvinde_intro() {
     $("#valg_question").hide();
     $("#valg_ja").hide();
     $("#valg_nej").hide();
+
+    $("#knap_lyd")[0].play();
+
     $("#kat_container").removeClass("kat_positionin");
     $("#doer_sprite").removeClass("doer_closed");
     $("#phone_sprite").removeClass("phone_kat");
@@ -335,7 +343,7 @@ function kvinde_valg() {
     $("#valg_ja").show();
     $("#valg_nej").show();
 
-    $("#miav")[0].volume = 0.4;
+    $("#miav")[0].volume = 0.1;
     $("#pift_kvinde")[0].play();
 
     $("#valg_ja").on("click", credit_antal_rigtige);
@@ -344,4 +352,6 @@ function kvinde_valg() {
 
 function credit_antal_rigtige() {
     console.log("antal rigtige");
+
+    $("#knap_lyd")[0].play();
 }
