@@ -12,6 +12,9 @@ function sidenvises() {
     $("#phone_container").hide();
     $("#doer_sprite").addClass("doer_open");
 
+    $("#klasse_stoej")[0].volume = 0.25;
+    $("#klasse_stoej")[0].play();
+
     setTimeout(doer_close, 3000);
 }
 
