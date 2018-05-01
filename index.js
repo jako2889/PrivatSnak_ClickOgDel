@@ -52,4 +52,31 @@ function doer_open() {
     $("#doer_lyd")[0].play();
 
     $("#doer_sprite").addClass("doer_open");
+
+    setTimeout(noerd_intro, 2000);
+}
+
+function noerd_intro() {
+    console.log("Nørd kommer ind");
+    $("#noerd_container").removeClass("noerd_positionstart");
+
+    $("#fodtrin_lyd")[0].play();
+
+     $("#noerd_container").addClass("noerd_movein");
+    $("#noerd_sprite").addClass("noerd_walkcycle");
+
+    $("#noerd_container").on("animationend", noerd_position_in);
+}
+
+function noerd_position_in() {
+    console.log("Nørd står på position");
+    $("#noerd_container").off("animationend", noerd_position_in);
+
+    $("#noerd_container").removeClass("noerd_movein");
+    $("#noerd_sprite").removeClass("noerd_walkcycle");
+    $("#doer_sprite").removeClass("doer_open");
+    $("#fodtrin_lyd")[0].pause();
+
+    $("#noerd_container").addClass("noerd_positionin");
+    $("#doer_sprite").addClass("doer_closed");
 }
