@@ -18,6 +18,8 @@ function sidenvises() {
 function doer_close() {
     console.log("dreng kommer ind");
 
+    $("#dreng_container").removeClass("dreng_positionstart");
+
     $("#dreng_container").addClass("dreng_movein");
     $("#dreng_sprite").addClass("dreng_walkcycle");
 
