@@ -291,8 +291,9 @@ function kvinde_intro2() {
     console.log("kvinde kommer ind");
     $("#kvinde_container").removeClass("kvinde_positionstart");
 
+    $("#fodtrin_lyd")[0].play();
 
-     $("#kvinde_container").addClass("kvinde_movein");
+    $("#kvinde_container").addClass("kvinde_movein");
     $("#kvinde_sprite").addClass("kvinde_walkcycle");
 
     $("#kvinde_container").on("animationend", kvinde_position_in);
