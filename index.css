@@ -453,8 +453,10 @@ body {
     background-image: url(pjece_logoer_projekt-01.svg);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 40vw;
-    height: 40vw;
+    width: 80vw;
+    height: 39vw;
+    left: -5vw;
+    top: -3.5vw;
     position: absolute;
     pointer-events: none;
     display: none;

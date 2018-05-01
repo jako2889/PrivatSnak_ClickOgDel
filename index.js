@@ -353,6 +353,23 @@ function kvinde_valg() {
 
 function credit_antal_rigtige() {
     console.log("antal rigtige");
+    $("#valg_ja").off("click", kvinde_intro);
+    $("#valg_nej").off("click", kvinde_intro);
+    $("#valg_question").hide();
+    $("#valg_ja").hide();
+    $("#valg_nej").hide();
+
+    $("#phone_sprite").removeClass("phone_kvinde");
+    $("#phone_container").removeClass("phone_positionblitz");
+    $("#kvinde_container").removeClass("kvinde_positionin");
+
+    $("#kvinde_container").addClass("kvinde_positionstart");
+    $("#phone_container").addClass("phone_positionin");
 
     $("#knap_lyd")[0].play();
+    $("#klasse_stoej")[0].pause();
+    $("#credit_musik")[0].volume = 0.25;
+    $("#credit_musik")[0].play();
+    $("#valg_question").show();
+    $("#info_box").show();
 }
