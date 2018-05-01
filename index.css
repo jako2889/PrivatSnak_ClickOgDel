@@ -11,6 +11,21 @@ body {
     margin: 0 auto;
     overflow: hidden;
 }
+
+.scene_flash {
+    animation-name: scene_flash_kf;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes scene_flash_kf {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
 #baggrund {
     position: absolute;
     top: 0;
