@@ -49,6 +49,24 @@ body {
     height: 20vw;
 
 }
+.noerd_movein {
+     animation-name: noerd_movein_kf;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes noerd_movein_kf {
+    0% {
+        transform: translate(0vw, 0vw);
+    }
+
+    100% {
+        transform: translate(0vw, 0vw);
+    }
+
+}
 
 .noerd_walkcycle {
     animation-name: noerd_walkcycle_kf;
