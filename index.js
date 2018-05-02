@@ -1,3 +1,5 @@
+var antalklik = 0;
+
 $(window).on("load", sidenvises);
 
 function sidenvises() {
