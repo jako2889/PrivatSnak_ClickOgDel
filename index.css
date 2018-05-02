@@ -462,3 +462,17 @@ body {
     display: none;
     z-index: 3;
 }
+
+#credit_try_again {
+    background-image: url(proev_igen.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 15vw;
+    height: 15vw;
+    bottom: 5vw;
+    left: 10vw;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    cursor: pointer;
+}

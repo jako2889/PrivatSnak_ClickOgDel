@@ -371,4 +371,15 @@ function credit_antal_rigtige() {
     $("#credit_musik")[0].volume = 0.25;
     $("#credit_musik")[0].play();
     $("#info_box").show();
+    $("#credit_try_again").show();
+
+    $("#credit_try_again").on("click", reloadpage);
+}
+
+function reloadpage() {
+    console.log("siden reloades");
+
+    $("#knap_lyd")[0].play();
+
+    location.reload();
 }
