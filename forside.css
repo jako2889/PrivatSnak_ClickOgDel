@@ -34,6 +34,16 @@ body {
     left: 15vw;
     top: 5vw;
     position: absolute;
-    pointer-events: none;
+    cursor: pointer;
     z-index: 2;
+}
+
+a {
+ position: absolute;
+    z-index: 2;
+    text-decoration: none;
+    color: black;
+    font-size: 5em;
+    right: 37vw;
+    bottom: 17vw;
 }
