@@ -24,3 +24,16 @@ body {
     z-index: 1;
     overflow: hidden;
 }
+
+#logo_click {
+     background-image: url(logo_click_forside.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 35vw;
+    left: 5vw;
+    top: 3vw;
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+}
