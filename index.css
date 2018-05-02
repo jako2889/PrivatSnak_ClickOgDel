@@ -504,3 +504,13 @@ body {
     display: none;
     z-index: 3;
 }
+#link_privatsnak a {
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+  color: white;
+  background-color: orange;
+  font-size: 2em;
+  bottom: 2vw;
+  right: 35vw;
+}

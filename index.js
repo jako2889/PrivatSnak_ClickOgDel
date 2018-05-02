@@ -12,6 +12,7 @@ function sidenvises() {
     $("#kvinde_container").addClass("kvinde_positionstart");
     $("#phone_container").addClass("phone_positionin");
     $("#phone_container").hide();
+    $("#link_privatsnak").hide();
     $("#doer_sprite").addClass("doer_open");
 
     $("#klasse_stoej")[0].volume = 0.25;
@@ -381,6 +382,7 @@ function credit_antal_rigtige() {
     $("#credit_musik")[0].volume = 0.25;
     $("#credit_musik")[0].play();
     $("#info_box").show();
+    $("#link_privatsnak").show();
     $("#credit_try_again").show();
 
     if(antalklik==1){
