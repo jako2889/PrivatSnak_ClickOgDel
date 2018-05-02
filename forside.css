@@ -34,7 +34,6 @@ body {
     left: 15vw;
     top: 5vw;
     position: absolute;
-    cursor: pointer;
     z-index: 2;
 }
 
