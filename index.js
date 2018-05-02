@@ -370,6 +370,5 @@ function credit_antal_rigtige() {
     $("#klasse_stoej")[0].pause();
     $("#credit_musik")[0].volume = 0.25;
     $("#credit_musik")[0].play();
-    $("#valg_question").show();
     $("#info_box").show();
 }
