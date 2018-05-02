@@ -153,6 +153,7 @@ function skrr_intro2() {
 
      $("#celeb_container").addClass("celeb_movein");
     $("#celeb_sprite").addClass("celeb_walkcycle");
+    $("#skrr")[0].play();
 
     $("#celeb_container").on("animationend", celeb_position_in);
 }
@@ -192,7 +193,6 @@ function celeb_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
-    $("#skrr")[0].play();
 
     $("#valg_ja").on("click", kat_intro);
     $("#valg_nej").on("click", kat_intro);
