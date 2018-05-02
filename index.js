@@ -70,6 +70,7 @@ function noerd_intro() {
     $("#noerd_container").removeClass("noerd_positionstart");
 
     $("#fodtrin_lyd")[0].play();
+    $("#grynt")[0].play();
 
      $("#noerd_container").addClass("noerd_movein");
     $("#noerd_sprite").addClass("noerd_walkcycle");
@@ -115,7 +116,6 @@ function noerd_valg() {
     $("#valg_question").show();
     $("#valg_ja").show();
     $("#valg_nej").show();
-    $("#grynt")[0].play();
 
 
     $("#valg_ja").on("click", clickYES);
