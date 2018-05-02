@@ -29,10 +29,10 @@ body {
      background-image: url(logo_click_forside.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 40vw;
-    height: 35vw;
-    left: 5vw;
-    top: 3vw;
+    width: 35vw;
+    height: 24vw;
+    left: 15vw;
+    top: 5vw;
     position: absolute;
     pointer-events: none;
     z-index: 2;
