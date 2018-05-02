@@ -1,5 +1,7 @@
 var antalklik = 0;
 
+var ErDerKlikketNok = false;
+
 $(window).on("load", sidenvises);
 
 function sidenvises() {
@@ -117,8 +119,15 @@ function noerd_valg() {
     $("#valg_nej").show();
     $("#grynt")[0].play();
 
+
+    $("#valg_ja").on("click", clickYES);
     $("#valg_ja").on("click", skrr_intro);
     $("#valg_nej").on("click", skrr_intro);
+}
+
+function clickYES() {
+    antalklik++;
+    console.log(antalklik);
 }
 
 function skrr_intro() {
@@ -271,6 +280,7 @@ function kat_valg() {
     $("#valg_ja").show();
     $("#valg_nej").show();
 
+
     $("#valg_ja").on("click", kvinde_intro);
     $("#valg_nej").on("click", kvinde_intro);
 }
@@ -375,6 +385,26 @@ function credit_antal_rigtige() {
     $("#info_box").show();
     $("#credit_try_again").show();
 
+    if(antalklik==1){
+        console.log("1 clicks")
+        rigtig_credit();
+    }else{
+        console.log("der ikke nok rigtige");
+        forkert_credit();
+    }
+
+    $("#credit_try_again").on("click", reloadpage);
+}
+
+function rigtig_credit() {
+    console.log("Credit rigtig");
+    $("#credit_antal_rigtige").show();
+    $("#credit_try_again").on("click", reloadpage);
+}
+
+function forkert_credit() {
+    console.log("Credit forkert");
+    $("#credit_antal_forkert").show();
     $("#credit_try_again").on("click", reloadpage);
 }
 

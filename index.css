@@ -476,3 +476,17 @@ body {
     z-index: 3;
     cursor: pointer;
 }
+
+#credit_antal_rigtige {
+    background-image: url(pjece_logoer_projekt_rigtig.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 40vw;
+    height: 35vw;
+    right: 5vw;
+    top: 3vw;
+    position: absolute;
+    pointer-events: none;
+    display: none;
+    z-index: 3;
+}
