@@ -1,7 +1,5 @@
 var antalklik = 0;
 
-var ErDerKlikketNok = false;
-
 $(window).on("load", sidenvises);
 
 function sidenvises() {
