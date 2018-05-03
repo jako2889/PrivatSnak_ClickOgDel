@@ -14,6 +14,7 @@ function sidenvises() {
     $("#phone_container").hide();
     $("#link_privatsnak").hide();
     $("#doer_sprite").addClass("doer_open");
+    $("#scene").show();
 
     $("#klasse_stoej")[0].volume = 0.25;
     $("#klasse_stoej")[0].play();
