@@ -41,11 +41,11 @@ body {
 
 #forgrund {
      position: absolute;
-    top: 16vw;
-    left: 20vw;
-    width: 120vw;
-    height: 40vw;
-    background-image: url(forgrund.svg);
+    bottom: -1vw;
+    right: 3vw;
+    width: 30vw;
+    height: 14vw;
+    background-image: url(forgrund_ny2.svg);
     background-size: 100%;
     background-repeat: no-repeat;
     z-index: 2;
