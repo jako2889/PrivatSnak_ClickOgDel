@@ -46,3 +46,7 @@ a {
     right: 37vw;
     bottom: 17vw;
 }
+
+a:hover {
+    color: #0D1B28;
+}

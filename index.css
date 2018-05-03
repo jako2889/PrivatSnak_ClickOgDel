@@ -514,3 +514,7 @@ body {
   bottom: 2vw;
   right: 35vw;
 }
+
+#link_privatsnak a:hover {
+    color: #0D1B28;
+}
